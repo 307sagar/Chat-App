@@ -1,0 +1,150 @@
+body {
+  /* margin: 0 auto; */
+  max-width: 1000px;
+  padding: 0 30px;
+  font-family: sans-serif;
+  background-color: lightgrey;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    height: 80px;
+    width: 420px;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+
+/* Contact css */
+
+
+#charactersList {
+    padding-inline-start: 0;
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+    border-radius: 30px;
+}
+
+.character > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.character > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#chat-container {
+    width: 45%;
+    height: 800px;
+    float: right;
+    display: inline-table;
+    border: 5px solid yellow;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    background: mediumpurple;
+}
+
+#textbox {
+    border-radius: 10px;
+    font-family: fantasy;
+}
+#sendbutton {
+    border-radius: 20px;
+}
+
+#contact-container {
+    width: 45%;
+    border: solid 5px yellow;
+    background: blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#new_Span{
+    font-size: smaller;
+}
+
+
+#newImgSpan {
+        width: 30px;
+        border-radius: 20px;
+}

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chat Application</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        </head>
+        <body>       
+         <!-- Chat messages display window -->
+         <div id='chat-container' style="display: none;">  
+             <span id="image-avatar"></span>
+         <div id='chat-display' style="display: none;">  
+            <div id="messages"></div>
+          </div>
+        <!-- Chat window -->
+          <div id='chat-window' style="display: none;">
+            <textarea id="textbox" rows="3" cols='55' style="height:10px !important;overflow-y:hidden !important;"></textarea>
+        <button id='sendButton' style="font-size:15px"> <i class="fa fa-send-o"></i> </button>
+            </div>
+        </div>   
+            <div id="contact-container">
+                <h3 style="color: white;">&#x2190; &nbsp; &nbsp; &nbsp; Messages</h3>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search for a contact"
+                />
+            </div>
+            <ul id="charactersList"></ul>
+        </div> 
+        <script src='./index.js'></script>
+    </body>
+</html>

@@ -8,7 +8,7 @@
 https://run.mocky.io/v3/ea4ed786-7f3b-4882-b678-255c1791c2d8
 Please let me know if you are unable to access the url.
 
-# The one way chat implementation is completed but the state is not retained. So, with every refresh the data of the chat is lost. I can work on implementing if submissin is not quite close.
+# The one way chat implementation is completed but the state is not retained. So, with every refresh the data of the chat is lost. I had worked on implementing if submission was not quite close.
 
 # Hope to have a good review remarks on the same. Thank you!!!
   
